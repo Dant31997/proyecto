@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesion</title>
+   
+</head>
+<body>
+    <img src="imagenes/carro2.jpg" alt="logo" class="logo">
+    <style>
+        html{background: linear-gradient(to bottom, rgb(177, 176, 176),70%, #ffffff ); margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; 
+    }
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .login-box {
+        width: 300px;
+        height: 270px;
+        margin-top: 20%;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px; /* Ajusta el valor para cambiar la curvatura de las esquinas */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-group {
+        margin-bottom: 5px;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input-group input {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .login-button {
+        position: absolute;
+        top: 72%; left: 45.5%;
+        width: 110px;
+        padding: 10px;
+        background-color: #d91900;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .login-button:hover {
+        background-color: #db2e2e;
+    }
+    h2 {
+        text-align: center  ;
+    }
+    .logo{
+        position: absolute;
+        width: 200px;
+        border-radius: 10px;
+        top: -2%; left: 43%;
+    }
+
+</style> 
+    <div class="login-box">
+    <h2>Iniciar Sesion</h2>
+    <form action="procesar_login.php" method="POST">
+        <div class="input-group">
+        <label for="nombre_usuario">Nombre de Usuario:</label>
+        <input type="text" id="nombre_usuario" name="nombre_usuario" required><br><br>
+        </div>
+        <div class="input-group">
+        <label for="contrasena">Contrasena:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+        </div>
+        <input class="login-button" type="submit" value="Iniciar Sesion">
+    </form>
+    </div>
+</body>
+</html>
